@@ -17,13 +17,8 @@
     <!--Forms method and action.-->
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
-    <!--The navigation bar containing the links to the other files/webpages that users can access-->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="apply.html">Apply</a>
-        <a href="about.html">About Us</a>
-    </nav>
+   <!--The navigation bar containing the links to the other files/webpages that users can access-->
+   <?php include 'nav.inc'; ?>
 
     <!--Header and description of the apply page-->
     <h1>ShopNest Application Page</h1>
@@ -62,11 +57,11 @@
                     <option value="act">ACT</option>
                 </select>
             <p><label for="postcode">Postcode</label> 
-            <input type="text" name= "postcode" id="postcode" size="5" pattern="^[0-9]{4}$" required="required"></p>
+            <input type="text" name= "postcode" id="postcode" size="5" pattern="[0-9]{4}" required="required"></p>
             <p><label for="email">Email</label> 
                 <input type="email" name= "email" id="email" required="required"></p> 
             <p><label for="phoneno">Phone Number</label>
-                <input type="text" name= "phoneno" id="phoneno" size="12" pattern="^[0-9]{8,12}$" required="required"></p>
+                <input type="text" name= "phoneno" id="phoneno" size="12" pattern="[0-9]{8,12}" required="required"></p>
         </fieldset>
 
          <!--The fieldset that lists set skills users are able to tick.-->

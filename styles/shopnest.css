@@ -225,50 +225,12 @@ h2 {
 /* Defining the overall font type to be used and the back up font incase the ideal font is not downloaded or able to be used*/
 * { font-family: calibri, sans-serif; }
 
-/* The background of the apply page and padding to create a border and keep text from side of screen. */
-body{background:#f4f6f8;
-    padding: 15px;
-}
-
-
 /* Makes the class (row) a flexbox container which ensures that each item is stored in a row. Establishes the gap between one 
 another and allows for the rows items to move a row if window size changes.*/
 .row {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-/* Targets the fieldsets in the row and how they are sized in the flex layout */
-.row fieldset{
-    width: 45%;
-    min-width: 320px;
-}
-
-/* Adds space above and below the button by 30px, centers the buttons inside the div.*/
-.buttons {
-    margin: 30px;
-    text-align:center;
-}
-
-/* Defines each fieldsets width, its border color and type. The border radius changes the corners of the fieldset, rounding them.
-The padding ensures text isn't cramped inside the fiedlsets and the margin makes sure the fieldsets aren't too close and touching
-eachother. Box shadow adds a shadow around each fieldset.*/
-fieldset {
-    width: 45%;
-    border: 2px solid #1e3a8a;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/*Changes the look of every input, select and text area component with rounded edges and be the same color*/
-input, select, textarea {
-    padding: 6px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
 /* Padding defines the width and length of the button. I have removed the default borders from the buttons and made the cursor 
@@ -296,11 +258,6 @@ surrounding it.*/
 .buttons input:hover {
     color: #3b82f6;
 }
-
-/* Makes the text box bigger then default whilst also adjusting to the screen size. */
-#otherskills {width: 70%
-  }
-
 
 /* About page */
 

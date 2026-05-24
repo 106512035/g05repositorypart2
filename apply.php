@@ -18,13 +18,18 @@
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
    <!--The navigation bar containing the links to the other files/webpages that users can access-->
-   <?php include 'nav.inc'; ?>
+   <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About Us</a>
+    </nav>
 
     <!--Header and description of the apply page-->
     <h1>ShopNest Application Page</h1>
     <p><strong>Welcome to the ShopNest job application page! Please complete all required fields and let's see if you have what it takes to join our team!</strong></p>
     <p>We encourage applications from Aboriginal and Torres Strait Islanders and are committed to providing a positive and safe work enviroment.</p>
-            
+
     <!--Sub-heading and input for job reference ID.-->
     <p><label for="jobid">Job Reference ID</label> 
         <input type="text" name= "jobid" id="jobid" maxlength="5" size="10" required="required" pattern="^[a-zA-Z0-9]{5}$"> </p>
@@ -110,7 +115,7 @@
         <p id="acknowledgment">We acknowledge the Wurundjeri People of the Kulin Nation, the Traditional Owners of the land on which we work. We pay our respects to Elders past, present and emerging.</p>
         <!--The buttons including a submit and reset form.-->
     <div class="buttons">
-    <input type= "submit" value="Apply" id="subutton">
+    <a href="#success-screen"input type= "submit" value="Apply" id="subutton">
 	<input type= "reset" value="Reset Form" id="resbutton">
     </div>
 </form>

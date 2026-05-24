@@ -230,10 +230,6 @@ body{background:#f4f6f8;
     padding: 15px;
 }
 
-/* Aligning the heading to the left as well as defining the color */
-h1 {text-align: left;
-    color:  #1e3a8a;}
-
 
 /* Makes the class (row) a flexbox container which ensures that each item is stored in a row. Establishes the gap between one 
 another and allows for the rows items to move a row if window size changes.*/

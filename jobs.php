@@ -110,6 +110,7 @@ h1 {
     <article id="JOB2">
          <h2>Ecommerce Marketing Assistant</h2>
         <p><strong>Reference Number:</strong> EMA02</p>
+        <p><strong>Reporting Line:</strong> Marketing Manager</p>
     <aside class="Job2-sideinfo">
     <h3 id ="title2">Important Job Information</h3>
   

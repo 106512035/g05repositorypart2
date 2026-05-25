@@ -38,7 +38,6 @@
             width: 45%;
             min-width: 320px;
         }
-
     </style>
 </header>
     <!--Forms method and action.-->
@@ -141,7 +140,7 @@
         <!--Acknowledgment to country-->
         <p style= "max-width: 700px; margin: 20px auto; font-size: 0.9em; color: #444; text-align: center;">We acknowledge the Wurundjeri People of the Kulin Nation, the Traditional Owners of the land on which we work. We pay our respects to Elders past, present and emerging.</p>
         <!--The buttons including a submit and reset form.-->
-    <div class="buttons">
+    <div class="buttons" style="text-align: center; margin-top: 20px;">
     <input type= "submit" value="Apply" id="subutton">
 	<input type= "reset" value="Reset Form" id="resbutton">
     </div>

@@ -6,7 +6,7 @@
     <meta name = "description" content = "Job Description Page">
     <meta name = "keywords" content = "Jobs, Application, HTML, ecommerce ">
     <meta name = "author" content = "Thomas Nguyen">
-    <link rel="stylesheet" href="styles/jobpage.css">
+    <link rel="stylesheet" href="styles/shopnest.css">
     <title>Job Description</title>
 
   <!---Embedded CSS-->
@@ -27,13 +27,13 @@ h1 {
 <body>
 
 <header>
-  <img src="Company_logo.png" alt="ShopNest Logo">
+  <img src="images/company_logo.png" alt="ShopNest Logo">
   </header>
   <nav>
-        <a href="index.html">Home</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="apply.html">Apply</a>
-        <a href="about.html">About Us</a>
+        <a href="index.php">Home</a>
+        <a href="jobs.php">Jobs</a>
+        <a href="apply.php">Apply</a>
+        <a href="about.php">About Us</a>
   </nav>
     <h1>Available positions</h1>
     <p>We are hiring individuals who have experience in assisting customers online with their orders. All roles are based in Melbourne, Victoria.</p>
@@ -110,6 +110,7 @@ h1 {
     <article id="JOB2">
          <h2>Ecommerce Marketing Assistant</h2>
         <p><strong>Reference Number:</strong> EMA02</p>
+        <p><strong>Reporting Line:</strong> Marketing Manager</p>
     <aside class="Job2-sideinfo">
     <h3 id ="title2">Important Job Information</h3>
   

@@ -108,7 +108,7 @@
                 <input type="checkbox" id="teamwork" name="skill[]" value="teamwork"></p>
             <p><label for="time_managing">Great time management</label> 
                 <input type="checkbox" id="time_managing" name="skill[]" value="time_managing"></p>
-            <p><label for="fieldwork">Worked in a familiar field</label> 
+            <p><label for="fieldwork">Worked in a similar field</label> 
                 <input type="checkbox" id="fieldwork" name="skill[]" value="fieldwork"></p>
             <p><label for="userinter">Familiar with user interfaces</label> 
                 <input type="checkbox" id="userinter" name="skill[]" value="userinter"></p>

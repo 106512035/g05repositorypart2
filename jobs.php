@@ -74,7 +74,7 @@ h1 {
         <p><strong>Reference Number:</strong> <?php echo $job['reference_number']; ?></p>
         <p><strong>Reporting Line:</strong> <?php echo $job['reporting_line']; ?></p>
 
-      
+      <!--important info for the jobs-->
         <aside>
 
             <h3>Important Job Information</h3>
@@ -92,6 +92,47 @@ h1 {
             </ul>
 
         </aside>
+
+      <!--main job content-->
+        <section>
+            <h3>About the Role</h3>
+            <p><?php echo $job['about_role']; ?></p>
+        </section>
+
+        <section>
+            <h3>About the Team</h3>
+            <p><?php echo $job['about_team']; ?></p>
+        </section>
+
+        <section>
+            <h3>Responsibilities</h3>
+            <ol>
+                <?php foreach (explode('|', $job['responsibilities']) as $item): ?>
+                    <li><?php echo trim($item); ?></li>
+                <?php endforeach; ?>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Requirements</h3>
+
+            <h4>Essential</h4>
+            <ul>
+                <?php foreach (explode('|', $job['essential_req']) as $item): ?>
+                    <li><?php echo trim($item); ?></li>
+                <?php endforeach; ?>
+            </ul>
+
+            <h4>Preferable</h4>
+            <ul>
+                <?php foreach (explode('|', $job['preferable_req']) as $item): ?>
+                    <li><?php echo trim($item); ?></li>
+                <?php endforeach; ?>
+            </ul>
+
+        </section>
+
+    </article>
   
  <?php endif; ?>
 

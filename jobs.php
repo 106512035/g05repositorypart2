@@ -33,7 +33,9 @@ $result = mysqli_query($conn, $query);
   }
 h1 {
   color: #1e3a8a;
-
+  .search-container { margin: 20px 0; }
+  .search-container input[type="text"] { padding: 8px; font-size: 15px; width: 300px; }
+  .search-container button { padding: 8px 18px; background-color: #1e3a8a; color: white; border: none; cursor: pointer; }
 }
 </style>
 </head>
@@ -51,7 +53,18 @@ h1 {
   </nav>
     <h1>Available positions</h1>
     <p>We are hiring individuals who have experience in assisting customers online with their orders. All roles are based in Melbourne, Victoria.</p>
-  <article id="JOB1"> 
+  
+    <!---Search Bar-->
+<div class="search-container">
+    <form method="GET" action="jobs.php">
+        <input type="text" name="search" placeholder="Search job by keyword" value=" <?php echo $search; ?>">
+        <button type="submit">Search</button>
+        <a href="jobs.php">Clear</a>
+    </form>
+</div>
+  
+
+    <article id="JOB1"> 
     <h2>Ecommerce Website Coordinator</h2>
     
     <p><strong>Reference Number:</strong> EWC01</p>

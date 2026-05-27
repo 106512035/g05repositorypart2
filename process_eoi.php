@@ -1,4 +1,9 @@
 <?php
+require_one("settings.php");
+$conn = mysqli_connect($host, $username, $password, $database);
+if (!$conn) {
+    echo "<p> Databse connection failed.". mysqli_connect_error()."</p>";
+}
     function sanitise_input($data){
         $data = trim($data);
         $data = stripslashes($data);
@@ -21,22 +26,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $gender = sanitise_input($_POST["gender"]);
     $state = sanitise_input($_POST["state"]);
     $status = sanitise_input($_POST["status"]);
+}
 
-    if (empty($fname)){
-        echo "First name is required!<br>";
-    }
-    if (empty($lname)){
-        echo "Last name is required!<br>";
-    }
-    if (!preg_match("^[a-zA-Z0-9]{5}$, $jobid")) {
-        echo "Please enter a valid 5 digit ID!<br>"
-    }
+    $errors = [];
+    if (empty($fname)) $errors[] = "First name is required!<br>";
+    
+    if (empty($lname))$errors[] =  "Last name is required!<br>";
 
-    if (empty($dob)){
-        echo "Date of birth is required<br>"
-    }
-
+    if (!preg_match("^[a-zA-Z0-9]{5}$", $jobid)) $errors[] = "Please enter a valid 5 digit ID!<br>";
     
 
+    #if (empty($dob)){
+    #    echo "Date of birth is required<br>"
+    #}
 
-}
+//     if (empty($address)){
+//         echo "Address is required<br>"
+//     }
+
+//     if (empty($postcode)){
+//         echo"Postcode is required<br>"
+//     }
+
+//     if (empty($email)){
+//         echo"Email is required<br>"
+//     }
+
+//     if (empty($phone_no)){
+//         echo"Phone number is required<br>"
+//     }
+
+//     if (empty($suburb)){
+//         echo"Suburb is required<br>"
+//     }
+
+//     if (empty($gender)){
+//         echo"Gender is required<br>"
+//     }
+
+//     if (empty($state)){
+//         echo"State is required<br>"
+//     }
+// }
+// #review to see if all if statements apply and if validation is required.

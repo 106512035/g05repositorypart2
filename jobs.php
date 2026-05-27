@@ -39,9 +39,8 @@ $result = mysqli_query($conn, $query);
 <!--disclaimer: AI was used to generate type of jobs for the theme ecommerce. for 2 job positions-->
 <body>
 
-<header>
-  <img src="images/company_logo.png" alt="ShopNest Logo">
-</header>
+  <?php include 'header.inc'; ?>
+
 
 <!--Nav inc link-->
 <?php include 'nav.inc'; ?>

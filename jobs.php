@@ -75,7 +75,7 @@ h1 {
         <p><strong>Reporting Line:</strong> <?php echo $job['reporting_line']; ?></p>
 
       <!--important info for the jobs-->
-        <aside>
+        <aside style="float: right; width: 25%; margin: 10px; padding: 15px; border: 1px solid black;">
 
             <h3>Important Job Information</h3>
 

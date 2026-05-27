@@ -1,3 +1,17 @@
+<?php 
+require_once 'jobsetting.php'; 
+
+$search = '';
+if (isset($_GET['search'])) {
+    $search = $_GET['search'];
+}
+
+$query = "SELECT * FROM jobs";
+$result = mysqli_query($conn, $query);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

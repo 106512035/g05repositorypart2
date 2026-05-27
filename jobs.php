@@ -25,32 +25,27 @@ $result = mysqli_query($conn, $query);
 
   <!---Embedded CSS-->
   <style>
-    /* Font for the whole page.*/
   body {
-
     font-family: Arial, sans-serif;
-
   }
-h1 {
-  color: #1e3a8a;
+  h1 {
+    color: #1e3a8a;
+  }
   .search-container { margin: 20px 0; }
   .search-container input[type="text"] { padding: 8px; font-size: 15px; width: 300px; }
-  .search-container button { padding: 8px 18px; background-color: #1e3a8a; color: white; border: none; cursor: pointer; }
-}
 </style>
+
 </head>
 <!--disclaimer: AI was used to generate type of jobs for the theme ecommerce. for 2 job positions-->
 <body>
 
 <header>
   <img src="images/company_logo.png" alt="ShopNest Logo">
-  </header>
-  <nav>
-        <a href="index.php">Home</a>
-        <a href="jobs.php">Jobs</a>
-        <a href="apply.php">Apply</a>
-        <a href="about.php">About Us</a>
-  </nav>
+</header>
+
+<!--Nav inc link-->
+<?php include 'nav.inc'; ?>
+
     <h1>Available positions</h1>
     <p>We are hiring individuals who have experience in assisting customers online with their orders. All roles are based in Melbourne, Victoria.</p>
   

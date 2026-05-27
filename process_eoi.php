@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require_once("settingsapply.php");
 $conn = mysqli_connect($host, $username, $password, $database);
@@ -63,11 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-//Adapt your Part 1 form to POST to process_eoi.php. DONE
-//If eoi table does not exist, create it in code.
-//On success, show a confirmation with the auto-generated EOInumber. HALF COMPLETE
-//Block direct URL access to process_eoi.php (e.g., check required POST fields, otherwise redirect).
-//Server-side validation & sanitising: trim, strip slashes, escape HTML, check required formats. REVISE
-//Make sure to disable all HTML form validation at the client-side and do all validations on the server side. DONE
+
 ?>
 

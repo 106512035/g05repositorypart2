@@ -179,8 +179,7 @@ nav a:hover {
     }
 
 /* floats the job side info and styles it*/
-.Job1-sideinfo,
-.Job2-sideinfo {
+.job-sideinfo {
   float: right;
   width: 25%;
   margin: 10px;

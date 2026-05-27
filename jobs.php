@@ -63,8 +63,42 @@ h1 {
     </form>
 </div>
   
+<?php while ($job = mysqli_fetch_assoc($result)): ?>
 
+    <?php if ($search == '' || stristr($job['job_title'], $search)): ?>
+
+      <article style="margin:20px; border:2px solid #1e3a8a; padding:15px;">
+
+        <h2><?php echo $job['job_title']; ?></h2>
+
+        <p><strong>Reference Number:</strong> <?php echo $job['reference_number']; ?></p>
+        <p><strong>Reporting Line:</strong> <?php echo $job['reporting_line']; ?></p>
+
+      
+        <aside>
+
+            <h3>Important Job Information</h3>
+
+            <p><strong>Location:</strong> <?php echo $job['location']; ?></p>
+            <p><strong>Job Type:</strong> <?php echo $job['job_type']; ?></p>
+            <p><strong>Salary:</strong> <?php echo $job['salary_range']; ?></p>
+            <p><strong>Experience:</strong> <?php echo $job['experience']; ?></p>
+
+            <h4>Key Skills</h4>
+            <ul>
+                <?php foreach (explode(',', $job['key_skills']) as $skill): ?>
+                    <li><?php echo trim($skill); ?></li>
+                <?php endforeach; ?>
+            </ul>
+
+        </aside>
   
+ <?php endif; ?>
+
+<?php endwhile; ?>
+
+<?php mysqli_close($conn); ?>
+
 
   <footer style="text-align: center; font-size: 14px;">
     <p>To apply, send your resume and a short cover letter to <a href="mailto:106509590@swinburne.edu.au">106509590@sswinburne.edu.au</a> quoting the reference number of the role.</p>

@@ -38,6 +38,7 @@
             width: 45%;
             min-width: 320px;
         }
+
     </style>
 </header>
     <!--Forms method and action.-->
@@ -107,7 +108,7 @@
                 <input type="checkbox" id="teamwork" name="skill[]" value="teamwork"></p>
             <p><label for="time_managing">Great time management</label> 
                 <input type="checkbox" id="time_managing" name="skill[]" value="time_managing"></p>
-            <p><label for="fieldwork">Worked in a similar field</label> 
+            <p><label for="fieldwork">Worked in a familiar field</label> 
                 <input type="checkbox" id="fieldwork" name="skill[]" value="fieldwork"></p>
             <p><label for="userinter">Familiar with user interfaces</label> 
                 <input type="checkbox" id="userinter" name="skill[]" value="userinter"></p>
@@ -140,7 +141,7 @@
         <!--Acknowledgment to country-->
         <p style= "max-width: 700px; margin: 20px auto; font-size: 0.9em; color: #444; text-align: center;">We acknowledge the Wurundjeri People of the Kulin Nation, the Traditional Owners of the land on which we work. We pay our respects to Elders past, present and emerging.</p>
         <!--The buttons including a submit and reset form.-->
-    <div class="buttons" style="text-align: center; margin-top: 20px;">
+    <div class="buttons">
     <input type= "submit" value="Apply" id="subutton">
 	<input type= "reset" value="Reset Form" id="resbutton">
     </div>

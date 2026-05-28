@@ -1,6 +1,6 @@
-<?php include 'header.php'; ?>
+<?php include 'header.inc'; ?>
 
-<?php include 'nav.php'; ?>
+<?php include 'nav.inc'; ?>
 
 <!-- IMAGE SECTION -->
 <div class="image-section">
@@ -35,4 +35,4 @@
     </table>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer.inc'; ?>

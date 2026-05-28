@@ -1,5 +1,9 @@
 <?php
 error_reporting(E_ALL);
+if ($_SERVER["REQUEST_METHOD"] != "POST") {
+    header("Location: apply.php");
+    exit();
+}
 require_once("settingsapply.php");
 $conn = mysqli_connect($host, $username, $password, $database);
 if (!$conn) {

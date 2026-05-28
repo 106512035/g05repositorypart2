@@ -1,0 +1,347 @@
+ /*
+filename: Shop Nest CSS
+author: Damisi, Thomas, Bianca & Kade
+created: 10/04/26
+last modified: 14/05/26
+description: The universal CSS page used across all pages.
+*/
+.index-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #1e3a8a, #f97316);
+    overflow-y: auto;
+}
+
+/* HEADER (blue → orange gradient like logo) */
+header {
+    text-align: center;
+    background: linear-gradient(to right, #1e3a8a, #f97316);
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    width: 200px;
+}
+
+/* SEARCH */
+.search-box {
+display: none;              
+position: flex;
+top: 100px;
+background: white;
+padding: 10px;
+border-radius: 8px;
+
+}
+
+/* show search box when checked */
+#searchToggle:checked ~ .search-box {
+display: flex;
+align-items: center;
+}
+
+/* search button */
+.search-btn {
+margin-left: auto;
+cursor: pointer;
+padding: 8px 12px;
+font-size: 16px;
+background-color: #f97316;
+border: none;
+border-radius: 5px;
+}
+
+/* hover effect */
+.search-btn:hover {
+background-color: #ea580c;
+}
+
+ 
+.image-section {
+display: flex;
+justify-content: center;
+gap: 20px;           
+padding: 30px;
+flex-wrap: wrap;       
+}
+
+.image-section img {
+width: 400px;           
+height: 300px;         
+object-fit: cover;     
+border-radius: 12px;    
+
+}
+
+/* Section title */
+.section-title {
+text-align: center;
+font-size: 28px;
+margin-bottom: 25px;
+color: white;
+}
+
+/* Table */
+.WhyWorkWithUs {
+width: 80%;
+margin: 0 auto 40px;
+border-collapse: collapse;
+background-color: #ffffff;
+border: 2px solid #d1d5db; /* stronger outer border */
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Cells */
+.WhyWorkWithUs td {
+padding: 18px;
+border-bottom: 2px solid #e5e7eb; /* stronger row lines */
+}
+
+/* Left column */
+.WhyWorkWithUs td:first-child {
+width: 30%;
+font-weight: bold;
+border-right: 2px solid #e5e7eb; /* vertical divider */
+ color: #374151;
+}
+
+/* Right column */
+.WhyWorkWithUs td:last-child {
+color: #374151;
+}
+
+/* Hover effect */
+.WhyWorkWithUs tr:hover {
+background-color: #f9fafb;
+}
+
+
+
+.Acknowledgement {
+display: flex;
+justify-content: center;   
+align-items: center;
+gap: 20px;                 
+}
+
+.Acknowledgement img {
+width: 80px;             
+height: auto;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Nav bar — solid blue strip below header */
+nav {
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0.75rem 1rem;
+}
+
+/* Styles navigation links for readability and hover interaction */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em; 
+    
+}
+
+  /* hover highlight colour  */
+nav a:hover {
+        color: #f97316;
+    }
+
+
+  /* Adds border colour to the articles. */
+  article {
+    margin: 20px;
+    border: 2px solid #1e3a8a;    /* blue border around both job cards */
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  /* changed the styling for the footer to match the theme */
+  footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 14px;
+}
+
+footer a {
+    color: #93c5fd;
+}
+
+/* added styling for the titles of each job with brand colour and underline for adding emphasis */
+h2 {
+    color: #1e3a8a;
+    border-bottom: 2px solid #f97316;   /* orange underline matches your gradient */
+    padding-bottom: 5px;
+}
+
+ /* Styles the job title with id="title" in the sidebar using accent colour */
+  #title, #title2 { 
+    color: #f97316;
+}
+
+/* Defining the overall font type to be used and the back up font incase the ideal font is not downloaded or able to be used*/
+* { font-family: calibri, sans-serif; }
+
+/* Makes the class (row) a flexbox container which ensures that each item is stored in a row. Establishes the gap between one 
+another and allows for the rows items to move a row if window size changes.*/
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Padding defines the width and length of the button. I have removed the default borders from the buttons and made the cursor 
+change when hovered over to signify that it is clickable. */
+.buttons input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #1e3a8a;
+    color: white;
+    cursor: pointer;
+}
+
+/* Set a maximum width so that it does not exceed when the screen size changes. The margin adds space from the other elements 
+surrounding it.*/
+#acknowledgment {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 0.9em;
+    color: #444;
+    text-align: center;
+  }
+
+/* Changes the colour of the buttons text when hovered over.*/
+.buttons input:hover {
+    color: #3b82f6;
+}
+
+/* About page */
+
+.flag-sidebar {
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.flag-sidebar img {
+    width: 120px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.left-flags {
+    left: 10px;
+}
+.right-flags {
+    right: 10px;
+}
+.main-content {
+    margin: 0 60px;
+}
+.home-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.home-link:hover {
+    background-color: #0052a3;
+}
+h1 {
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #555;
+    margin-top: 30px;
+}
+dl {
+    margin: 20px 0;
+}
+dt {
+    font-weight: bold;
+    color: #0066cc;
+    margin-top: 15px;
+}
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+ul, ol {
+    margin: 10px 0;
+    padding-left: 40px;
+}
+li {
+    margin: 5px 0;
+}
+figure {
+    margin: 30px 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #0066cc;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #cce5ff;
+}
+tr:nth-child(odd) {
+    background-color: #cce5ff;
+}

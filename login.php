@@ -2,19 +2,21 @@
 session_start();
 require_once("jobsetting.php");
 
-$conn = mysqli_connect($host, $username, $password, $dbname);
+$conn = new mysqli($host, $username, $password, $dbname);
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+    $input_username = trim($_POST['username']);
+    $input_password = trim($_POST['password']);
 
-    $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-    $result = mysqli_query($conn, $query);
-    $user = mysqli_fetch_assoc($result);
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
+    $stmt->bind_param("ss", $input_username, $input_password);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
 
     if ($user) {
         $_SESSION['logged_in'] = true;
-        $_SESSION['username'] = $user['username'];
+        $_SESSION['user'] = $user['username'];
         header("Location: manage.php");
         exit();
     } else {

@@ -2,12 +2,18 @@
 session_start();
 require_once("jobsetting.php");
 
+// connects to the database 
 $conn = new mysqli($host, $username, $password, $dbname);
 
+// checks if the form has been submitted 
 if (isset($_POST['username']) && isset($_POST['password'])) {
+
+// removes whitespacing from input 
     $input_username = trim($_POST['username']);
     $input_password = trim($_POST['password']);
 
+
+// prepare statement to protect from SQL injection. 
     $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
     $stmt->bind_param("ss", $input_username, $input_password);
     $stmt->execute();
@@ -15,11 +21,13 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $user = $result->fetch_assoc();
 
     if ($user) {
+        // finds the user and if found allows the user to login and redirects to manage.php.
         $_SESSION['logged_in'] = true;
         $_SESSION['user'] = $user['username'];
         header("Location: manage.php");
         exit();
     } else {
+        // user not found 
         echo "Incorrect username or password.";
     }
 }

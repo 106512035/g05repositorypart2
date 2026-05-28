@@ -1,7 +1,7 @@
 <?php include 'header.inc'; ?>
 
 <?php include 'nav.inc'; ?>
-
+<body class="index-page">
 <!-- IMAGE SECTION -->
 <div class="image-section">
     <img src="images/ecommerce_image1.jpg" alt="ecommerce_image1">
@@ -9,7 +9,6 @@
     <img src="images/ecommerce_image4.jpg" alt="ecommerce_image4">
     <link rel="stylesheet" href="styles/shopnest.css">
 </div>
-<!-- ABOUT US SECTION -->
 <!-- WHY WORK WITH US -->
 <section>
    <h2>Why Work With Us</h2>
@@ -46,4 +45,6 @@
         We acknowledge the Traditional Owners of the land on which we operate, 
         the Wurundjeri people of the Kulin Nation. We pay our respects to 
         Elders past, present and emerging, and extend that respect to all 
-        Aboriginal and T
+        Aboriginal and Torres Strait Islander peoples. 
+
+        

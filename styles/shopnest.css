@@ -5,15 +5,12 @@ created: 10/04/26
 last modified: 14/05/26
 description: The universal CSS page used across all pages.
 */
-
-/* NEED TO APPLY THIS ONLY TO INDEX PAGE PLEASE (BELOW)
-body {
+.index-page {
     font-family: Arial, sans-serif;
     margin: 0;
-    margin: 0; removes default spacing 
     background: linear-gradient(to right, #1e3a8a, #f97316);
-    overflow-y: auto; 
-    }*/
+    overflow-y: auto;
+}
 
 /* HEADER (blue → orange gradient like logo) */
 header {

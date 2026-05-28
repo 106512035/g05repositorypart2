@@ -10,7 +10,10 @@
     <title>Apply</title>
 </head>
 <body>
-<?php include 'header.inc'; ?>
+<header>
+    <!--Company logo image which is displayed at the top of the webpage.-->
+    <img src="images/company_logo.png" alt="ShopNest Logo">
+</header>
     <!--Forms method and action.-->
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 

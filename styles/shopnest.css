@@ -6,14 +6,14 @@ last modified: 14/05/26
 description: The universal CSS page used across all pages.
 */
 
+/* NEED TO APPLY THIS ONLY TO INDEX PAGE PLEASE (BELOW)
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    
-margin: 0; /* removes default spacing */
-background: linear-gradient(to right, #1e3a8a, #f97316);
-overflow-y: auto; 
-}
+    margin: 0; removes default spacing 
+    background: linear-gradient(to right, #1e3a8a, #f97316);
+    overflow-y: auto; 
+    }*/
 
 /* HEADER (blue → orange gradient like logo) */
 header {
@@ -25,24 +25,6 @@ header {
 
 header img {
     width: 200px;
-}
-
-/* NAV BAR */
-nav {
-    background-color: #1e3a8a;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #f97316;
 }
 
 /* SEARCH */
@@ -172,19 +154,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* modified header */
-header {
-    background: linear-gradient(to right, #1e3a8a, #f97316);
-    display: flex; /*utilised a display flex to centre the logo as it defaults to the left. */
-    justify-content: center;    /* centers the logo to the middle */
-    padding: 1.5rem;
-}
-
-/* sizing image */
-header img {
-        width: 120px;
-    }
-
 /* Nav bar — solid blue strip below header */
 nav {
     background-color: #1e3a8a;
@@ -256,54 +225,12 @@ h2 {
 /* Defining the overall font type to be used and the back up font incase the ideal font is not downloaded or able to be used*/
 * { font-family: calibri, sans-serif; }
 
-/* The background of the apply page and padding to create a border and keep text from side of screen. */
-body{background:#f4f6f8;
-    padding: 15px;
-}
-
-/* Aligning the heading to the left as well as defining the color */
-h1 {text-align: left;
-    color:  #1e3a8a;}
-
-
 /* Makes the class (row) a flexbox container which ensures that each item is stored in a row. Establishes the gap between one 
 another and allows for the rows items to move a row if window size changes.*/
 .row {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-/* Targets the fieldsets in the row and how they are sized in the flex layout */
-.row fieldset{
-    width: 45%;
-    min-width: 320px;
-}
-
-/* Adds space above and below the button by 30px, centers the buttons inside the div.*/
-.buttons {
-    margin: 30px;
-    text-align:center;
-}
-
-/* Defines each fieldsets width, its border color and type. The border radius changes the corners of the fieldset, rounding them.
-The padding ensures text isn't cramped inside the fiedlsets and the margin makes sure the fieldsets aren't too close and touching
-eachother. Box shadow adds a shadow around each fieldset.*/
-fieldset {
-    width: 45%;
-    border: 2px solid #1e3a8a;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/*Changes the look of every input, select and text area component with rounded edges and be the same color*/
-input, select, textarea {
-    padding: 6px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
 /* Padding defines the width and length of the button. I have removed the default borders from the buttons and made the cursor 
@@ -331,11 +258,6 @@ surrounding it.*/
 .buttons input:hover {
     color: #3b82f6;
 }
-
-/* Makes the text box bigger then default whilst also adjusting to the screen size. */
-#otherskills {width: 70%
-  }
-
 
 /* About page */
 

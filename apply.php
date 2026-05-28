@@ -10,15 +10,20 @@
     <title>Apply</title>
 </head>
 <body>
-<>
+<header>
     <!--Company logo image which is displayed at the top of the webpage.-->
-    <?php include 'header.php'; ?>
-
+    <img src="images/company_logo.png" alt="ShopNest Logo">
+</header>
     <!--Forms method and action.-->
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
     <!--The navigation bar containing the links to the other files/webpages that users can access-->
-    <?php include 'nav.php'; ?>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About Us</a>
+    </nav>
 
     <!--Header and description of the apply page-->
     <h1>ShopNest Application Page</h1>

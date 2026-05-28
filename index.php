@@ -4,9 +4,10 @@
 
 <!-- IMAGE SECTION -->
 <div class="image-section">
-    <img src="Ecommerce_image1.jpg" alt="Ecommerce_image1">
-    <img src="Ecommerce_image3.jpg" alt="Ecommerce_image3">
-    <img src="Ecommerce_image4.jpg" alt="Ecommerce_image4">
+    <img src="images/ecommerce_image1.jpg" alt="ecommerce_image1">
+    <img src="images/ecommerce_image3.jpg" alt="ecommerce_image3">
+    <img src="images/ecommerce_image4.jpg" alt="ecommerce_image4">
+    <link rel="stylesheet" href="styles/shopnest.css">
 </div>
 
 <!-- WHY WORK WITH US -->
@@ -34,5 +35,15 @@
         </tr>
     </table>
 </section>
-
 <?php include 'footer.inc'; ?>
+ <div class="Acknowledgement">
+          <img src="images/aboriginal_Flag.jpg" alt="Aboriginal Flag">
+    <img src="images/torres_Strait_flag.jpg" alt="Torres Strait Islander Flag">
+    </div>
+  
+    
+        <p>
+        We acknowledge the Traditional Owners of the land on which we operate, 
+        the Wurundjeri people of the Kulin Nation. We pay our respects to 
+        Elders past, present and emerging, and extend that respect to all 
+        Aboriginal and T

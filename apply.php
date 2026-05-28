@@ -18,12 +18,7 @@
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
     <!--The navigation bar containing the links to the other files/webpages that users can access-->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="apply.html">Apply</a>
-        <a href="about.html">About Us</a>
-    </nav>
+    <?php include 'nav.inc'; ?>
 
     <!--Header and description of the apply page-->
     <h1>ShopNest Application Page</h1>

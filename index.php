@@ -1,12 +1,13 @@
-<?php include 'header.php'; ?>
+<?php include 'header.inc'; ?>
 
-<?php include 'nav.php'; ?>
+<?php include 'nav.inc'; ?>
 
 <!-- IMAGE SECTION -->
 <div class="image-section">
     <img src="Ecommerce_image1.jpg" alt="Ecommerce_image1">
     <img src="Ecommerce_image3.jpg" alt="Ecommerce_image3">
     <img src="Ecommerce_image4.jpg" alt="Ecommerce_image4">
+    <link rel="stylesheet" href="styles/shopnest.css">
 </div>
 
 <!-- WHY WORK WITH US -->
@@ -35,4 +36,4 @@
     </table>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer.inc'; ?>

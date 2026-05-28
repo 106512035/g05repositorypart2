@@ -1,5 +1,4 @@
 
-
  <header>
         <img src="images/company_logo.png" alt="ShopNest Logo">
         <h1>ShopNest</h1>

@@ -9,7 +9,7 @@
     <img src="images/ecommerce_image4.jpg" alt="ecommerce_image4">
     <link rel="stylesheet" href="styles/shopnest.css">
 </div>
-
+<!-- ABOUT US SECTION -->
 <!-- WHY WORK WITH US -->
 <section>
    <h2>Why Work With Us</h2>

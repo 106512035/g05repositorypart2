@@ -36,9 +36,10 @@ $result = mysqli_query($conn, $query);
 </style>
 
 </head>
-<!--disclaimer: AI was used to generate type of jobs for the theme ecommerce. for 2 job positions-->
+
 <body>
 
+<!--header inc link-->
   <?php include 'header.inc'; ?>
 
 
@@ -79,11 +80,9 @@ $result = mysqli_query($conn, $query);
             <p><strong>Experience:</strong> <?php echo $job['experience']; ?></p>
 
             <h4>Key Skills</h4>
-            <ul>
-                <?php foreach (explode(',', $job['key_skills']) as $skill): ?>
-                    <li><?php echo trim($skill); ?></li>
-                <?php endforeach; ?>
-            </ul>
+           <ul>
+            <?php echo $job['key_skills']; ?>
+          </ul>
 
         </aside>
 
@@ -99,32 +98,24 @@ $result = mysqli_query($conn, $query);
         </section>
 
         <section>
-            <h3>Responsibilities</h3>
-            <ol>
-                <?php foreach (explode('|', $job['responsibilities']) as $item): ?>
-                    <li><?php echo trim($item); ?></li>
-                <?php endforeach; ?>
-            </ol>
-        </section>
+    <h3>Responsibilities</h3>
+    <ol>
+        <?php echo $job['responsibilities']; ?>
+    </ol>
+</section>
 
-        <section>
-            <h3>Requirements</h3>
+<section>
+    <h3>Requirements</h3>
+    <h4>Essential</h4>
+    <ul>
+        <?php echo $job['essential_req']; ?>
+    </ul>
+    <h4>Preferable</h4>
+    <ul>
+        <?php echo $job['preferable_req']; ?>
+    </ul>
+</section>
 
-            <h4>Essential</h4>
-            <ul>
-                <?php foreach (explode('|', $job['essential_req']) as $item): ?>
-                    <li><?php echo trim($item); ?></li>
-                <?php endforeach; ?>
-            </ul>
-
-            <h4>Preferable</h4>
-            <ul>
-                <?php foreach (explode('|', $job['preferable_req']) as $item): ?>
-                    <li><?php echo trim($item); ?></li>
-                <?php endforeach; ?>
-            </ul>
-
-        </section>
 
     </article>
   

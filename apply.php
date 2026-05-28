@@ -11,8 +11,6 @@
 </head>
 <body>
 <header>
-    <!--Company logo image which is displayed at the top of the webpage.-->
-    <img src="images/company_logo.png" alt="ShopNest Logo">
     <style>
         fieldset {
             width: 45%;
@@ -41,16 +39,12 @@
 
     </style>
 </header>
+    <?php include 'header.inc'; ?>
     <!--Forms method and action.-->
-    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <form action="process_eoi.php" method="post">
 
    <!--The navigation bar containing the links to the other files/webpages that users can access-->
-   <nav>
-        <a href="index.html">Home</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="apply.html">Apply</a>
-        <a href="about.html">About Us</a>
-    </nav>
+    <?php include 'nav.inc'; ?>
 
     <!--Header and description of the apply page-->
     <h1 style = "text-align: left; color:  #1e3a8a;">ShopNest Application Page</h1>
@@ -67,17 +61,17 @@
         <fieldset>
             <legend>Personal Information</legend>
             <p><label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" size="10" required="required" pattern="[A-Za-z]{1,20}"></p>
+            <input type="text" name="firstname" id="firstname" size="10"></p>
             <p><label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" size="10" required="required" pattern="[A-Za-z]{1,20}"></p>
+            <input type="text" name="lastname" id="lastname" size="10"></p>
             <p><label for="dob">Date of Birth</label> 
-            <input type="date" name= "dob" id="dob" size="13" required="required"></p>
+            <input type="date" name= "dob" id="dob" size="13"></p>
             <p><label for="streetaddress">Street Address</label> 
-            <input type="text" name= "streetaddress" id="streetaddress" size="40" pattern="[a-zA-Z0-9\s,.'/-]{1,40}" required="required"></p>
+            <input type="text" name= "streetaddress" id="streetaddress" size="40"></p>
             <p><label for="suburb">Suburb</label> 
-            <input type="text" name= "suburb" id="suburb" size="10" pattern="^[a-zA-Z ]{1,40}$" required="required"></p>
+            <input type="text" name= "suburb" id="suburb" size="10"></p>
             <p><label for="state">State</label> 
-                <select name="state" id="state" required="required">
+                <select name="state" id="state">
                     <option value="">Please Select</option>			
                     <option value="vic">VIC</option>			
                     <option value="nsw">NSW</option>
@@ -89,11 +83,11 @@
                     <option value="act">ACT</option>
                 </select>
             <p><label for="postcode">Postcode</label> 
-            <input type="text" name= "postcode" id="postcode" size="5" pattern="[0-9]{4}" required="required"></p>
+            <input type="text" name= "postcode" id="postcode" size="5"></p>
             <p><label for="email">Email</label> 
-                <input type="email" name= "email" id="email" required="required"></p> 
+                <input type="email" name= "email" id="email"></p> 
             <p><label for="phoneno">Phone Number</label>
-                <input type="text" name= "phoneno" id="phoneno" size="12" pattern="[0-9]{8,12}" required="required"></p>
+                <input type="text" name= "phoneno" id="phoneno" size="12"></p>
         </fieldset>
 
          <!--The fieldset that lists set skills users are able to tick.-->
@@ -141,7 +135,7 @@
         <!--Acknowledgment to country-->
         <p style= "max-width: 700px; margin: 20px auto; font-size: 0.9em; color: #444; text-align: center;">We acknowledge the Wurundjeri People of the Kulin Nation, the Traditional Owners of the land on which we work. We pay our respects to Elders past, present and emerging.</p>
         <!--The buttons including a submit and reset form.-->
-    <div class="buttons">
+    <div class="buttons"  style="text-align: center;">
     <input type= "submit" value="Apply" id="subutton">
 	<input type= "reset" value="Reset Form" id="resbutton">
     </div>

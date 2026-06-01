@@ -38,7 +38,7 @@
             padding: 15px;
             margin: 10px;
             background: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 4px 4px 0 #f97316;
         }
 
         input, select, textarea {
@@ -69,6 +69,10 @@
             color: #1e3a8a;
             margin-bottom: 4px;
             font-size: 20px;
+        }
+
+        .buttons{
+            margin: 20px;
         }
 
     </style>

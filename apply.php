@@ -87,14 +87,14 @@
 
     
     <!--Header and description of the apply page-->
-    <h1 style = "text-align: left; color:  #1e3a8a;">ShopNest Application Page</h1>
-    <p style = "margin: 0; line-height: 0;"><strong>Welcome to the ShopNest job application page! Please complete all required fields and let's see if you have what it takes to join our team!</strong></p>
-    <p style = "color: #3d3d3d;">We encourage applications from Aboriginal and Torres Strait Islanders and are committed to providing a positive and safe work enviroment.</p>
+    <h1 style = "text-align: left; color:  #1e3a8a; margin: 10px;">ShopNest Application Page</h1>
+    <p style = "margin: 0; line-height: 0; margin: 15px;"><strong>Welcome to the ShopNest job application page! Please complete all required fields and let's see if you have what it takes to join our team!</strong></p>
+    <p style = "color: #3d3d3d; margin: 15px;">We encourage applications from Aboriginal and Torres Strait Islanders and are committed to providing a positive and safe work enviroment.</p>
 
     <!--Sub-heading and input for job reference ID.-->
-    <p><label for="jobid">Job Reference ID</label> 
+    <p><label for="jobid" style="margin: 15px;">Job Reference ID</label> 
         <input type="text" name= "jobid" id="jobid" maxlength="5" size="10" required="required" pattern="^[a-zA-Z0-9]{5}$"> </p>
-    <p>Please provide a valid Job ID reference!</p>
+    <p style="margin: 15px;">Please provide a valid Job ID reference!</p>
    
     <!--The fieldset that groups personal information on the user and requests to be filled out.-->
     <div class="row">

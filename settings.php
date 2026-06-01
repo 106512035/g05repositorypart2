@@ -3,7 +3,7 @@
 $host = "127.0.0.1";
 $username = "root";
 $password = "";
-$dbname = "jobs_db";
+$dbname = "shopnest_db";
 
 $conn = new mysqli($host, $username, $password, $dbname);
 

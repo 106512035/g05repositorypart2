@@ -119,7 +119,6 @@ background-color: #f9fafb;
 }
 
 
-
 .Acknowledgement {
   display: flex;
   justify-content: center;
@@ -130,6 +129,7 @@ background-color: #f9fafb;
 .Acknowledgement img {
   width: 80px;
   height: auto;
+  display: block;
 }
 
 

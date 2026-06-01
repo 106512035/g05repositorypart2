@@ -36,9 +36,9 @@
 </section>
 <?php include 'footer.inc'; ?>
  <div class="Acknowledgement">
-          <img src="images/aboriginal_Flag.jpg" alt="Aboriginal Flag">
-    <img src="images/torres_Strait_flag.jpg" alt="Torres Strait Islander Flag">
-    </div>
+  <img src="images/aboriginal_Flag.jpg" alt="Aboriginal Flag">
+  <img src="images/torres_Strait_flag.jpg" alt="Torres Strait Islander Flag">
+</div>
   
     
         <p>

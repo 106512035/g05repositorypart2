@@ -20,6 +20,7 @@ header {
     padding: 20px;
 }
 
+
 header img {
     width: 200px;
 }
@@ -119,17 +120,17 @@ background-color: #f9fafb;
 }
 
 
-
 .Acknowledgement {
-display: flex;
-justify-content: center;   
-align-items: center;
-gap: 20px;                 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .Acknowledgement img {
-width: 80px;             
-height: auto;
+  width: 80px;
+  height: auto;
+  display: block;
 }
 
 
@@ -287,11 +288,11 @@ surrounding it.*/
 .home-link:hover {
     background-color: #0052a3;
 }
-h1 {
+/*h1 {
     color: #333;
     border-bottom: 2px solid #0066cc;
     padding-bottom: 10px;
-}
+}*/
 h2 {
     color: #555;
     margin-top: 30px;

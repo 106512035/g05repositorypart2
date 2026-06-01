@@ -3,6 +3,6 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "shopnest";
+$database = "members_contributions";
 
 ?>

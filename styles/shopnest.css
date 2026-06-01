@@ -449,8 +449,11 @@ tr:nth-child(odd) {
     font-style: italic;
 }
 
+
+
 .section-title {
     font-weight: bold;
     margin-top: 12px;
     color: #333;
+    font-size: 14px;
 }

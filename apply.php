@@ -97,23 +97,22 @@
 
     <!--Sub-heading and input for job reference ID.-->
     <p><label for="jobid" style="margin: 15px;">Job Reference ID</label> 
-        <input type="text" name= "jobid" id="jobid" maxlength="5" size="10" required="required" pattern="^[a-zA-Z0-9]{5}$"> </p>
-    <p style="margin: 15px;">Please provide a valid Job ID reference!</p>
+        <input type="text" name= "jobid" id="jobid" maxlength="5" size="21" placeholder="Please enter a Valid ID!"> </p>
    
     <!--The fieldset that groups personal information on the user and requests to be filled out.-->
     <div class="row">
         <fieldset>
             <legend>Personal Information</legend>
             <p><label for="firstname" style= "display: block; color: #3d3d3d;">First Name</label>
-            <input type="text" name="firstname" id="firstname" size="10"></p>
+            <input type="text" name="firstname" id="firstname" size="35" placeholder="Enter your First Name here!"></p>
             <p><label for="lastname" style= "display: block; color: #3d3d3d;">Last Name</label>
-            <input type="text" name="lastname" id="lastname" size="10"></p>
+            <input type="text" name="lastname" id="lastname" size="35" placeholder="Enter your Last Name here!"></p>
             <p><label for="dob" style= "display: block; color: #3d3d3d;">Date of Birth</label> 
             <input type="date" name= "dob" id="dob" size="13"></p>
             <p><label for="streetaddress" style= "display: block; color: #3d3d3d;">Street Address</label> 
-            <input type="text" name= "streetaddress" id="streetaddress" size="40"></p>
+            <input type="text" name= "streetaddress" id="streetaddress" size="40" placeholder="Enter your place of Residence!"></p>
             <p><label for="suburb" style= "display: block; color: #3d3d3d;">Suburb</label> 
-            <input type="text" name= "suburb" id="suburb" size="10"></p>
+            <input type="text" name= "suburb" id="suburb" size="35" placeholder="Enter your Suburb here!"></p>
             <p><label for="state" style= "display: block; color: #3d3d3d;">State</label> 
                 <select name="state" id="state">
                     <option value="">Please Select</option>			
@@ -127,11 +126,11 @@
                     <option value="act">ACT</option>
                 </select>
             <p><label for="postcode" style= "display: block; color: #3d3d3d;">Postcode</label> 
-            <input type="text" name= "postcode" id="postcode" size="5"></p>
+            <input type="text" name= "postcode" id="postcode" size="20" placeholder="Enter your Postcode!"></p>
             <p><label for="email" style= "display: block; color: #3d3d3d;">Email</label> 
-                <input type="email" name= "email" id="email"></p> 
+                <input type="email" name= "email" id="email" size="35" placeholder="Enter your Email!"></p> 
             <p><label for="phoneno" style= "display: block; color: #3d3d3d;">Phone Number</label>
-                <input type="text" name= "phoneno" id="phoneno" size="12"></p>
+                <input type="text" name= "phoneno" id="phoneno" size="25" placeholder="Enter your Phone No!"></p>
         </fieldset>
 
          <!--The fieldset that lists set skills users are able to tick.-->

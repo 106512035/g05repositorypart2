@@ -3,16 +3,18 @@ require_once("settings.php");
 
 try {
     $pdo = new PDO(
-        "mysql:host=$host;dbname=$database;charset=utf8",
-        $user,
+        "mysql:host=$host;dbname=$dbname;charset=utf8",
+        $username,
         $password
     );
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
     $stmt = $pdo->prepare("SELECT * FROM member_contributions");
     $stmt->execute();
+
     $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
-       
+
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }

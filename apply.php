@@ -1,3 +1,4 @@
+<!--Session is started-->
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <title>Apply</title>
 
+    <!--Embedded CSS for the page-->
+    <!--Header, fieldset, inputs, font, legend, button and rows layout properties-->
     <style>
         header h1 {
             color: white;
@@ -81,6 +84,7 @@
     
     <body>
     <header>
+        <!--The header including text, image and caption-->
         <?php include 'header.inc'; ?>
         <!--The navigation bar containing the links to the other files/webpages that users can access-->
         <?php include 'nav.inc'; ?>
@@ -91,11 +95,12 @@
     <form action="process_eoi.php" method="post">
 
     
-    <!--Header and description of the apply page-->
+    <!--Heading and description of the apply page-->
     <h1 style = "text-align: left; color:  #1e3a8a; margin: 10px;">ShopNest Application Page</h1>
     <p style = "margin: 0; line-height: 0; margin: 15px;"><strong>Welcome to the ShopNest job application page! Please complete all required fields and let's see if you have what it takes to join our team!</strong></p>
     <p style = "color: #3d3d3d; margin: 15px;">We encourage applications from Aboriginal and Torres Strait Islanders and are committed to providing a positive and safe work enviroment.</p>
 
+    <!--PHP code which displays any errors users may have or its success and EOI number if all inputs are valid.-->
     <?php
     if (isset($_SESSION['errors'])){
         echo "<div style='background: #fee2e2; border: 1px solid red; border-radius:8px; padding:15px; margin: 10px;'>";

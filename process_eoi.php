@@ -1,7 +1,7 @@
 <?php
 //Session is started to remember the data
 session_start();
-//Displays all error reportings for the CSS, but is turned off in production.
+//Displays all error reportings for the PHP, but is turned off in production.
 error_reporting(E_ALL);
 
 //Ensures that process_eoi.php file is not being directly accessed and redirects the user to the apply.php page. Exit stops the rest of 
@@ -16,7 +16,8 @@ require_once("settingsapply.php");
 $conn = mysqli_connect($host, $username, $password, $database);
 if (!$conn) {
     error_log("Failed to connect to the database:" . mysqli_connect_error());
-    echo "<p>Something went wrong! Try again later.</p>"; 
+    $_SESSION['errors'][]="Something went wrong! Try again later";
+    header("Location: apply.php");
     exit();
 }
 
@@ -42,7 +43,9 @@ $createTable = "CREATE TABLE IF NOT EXISTS eoi (
 //If there is an error creating the table a message displayed and an error message is also logged in the server.
 if (!mysqli_query($conn, $createTable)) {
     error_log("Error creating table: " . mysqli_error($conn));
-    echo "<p>Something went wrong! Try again later.</p>"; 
+    $_SESSION['errors'][]="Something went wrong! Try again later";
+    header("Location: apply.php");
+    exit();
 }
 
 //This sanitises the input of all data by removing unessacary spaces, slashes and handles the converting of html special characters, 
@@ -115,4 +118,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-

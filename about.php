@@ -3,7 +3,7 @@ require_once("settings.php");
 
 try {
     $pdo = new PDO(
-        "mysql:host=$host;dbname=$dbname;charset=utf8",
+        "mysql:host=$host;dbname=$database;charset=utf8",
         $username,
         $password
     );

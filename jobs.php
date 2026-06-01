@@ -1,5 +1,5 @@
 <?php 
-require_once 'jobsetting.php'; 
+require_once 'settings.php'; 
 
 $search = '';
 if (isset($_GET['search'])) {

@@ -9,7 +9,7 @@ try {
     );
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $pdo->prepare("SELECT * FROM project_inputs");
+    $stmt = $pdo->prepare("SELECT * FROM member_contributions");
     $stmt->execute();
     $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
        

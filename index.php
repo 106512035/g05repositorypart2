@@ -55,13 +55,19 @@
  <div class="Acknowledgement">
   <img src="images/aboriginal_Flag.jpg" alt="Aboriginal Flag">
   <img src="images/torres_Strait_flag.jpg" alt="Torres Strait Islander Flag">
-</div>
-  
-    
-        <p>
+
+
+  <p>
         We acknowledge the Traditional Owners of the land on which we operate, 
         the Wurundjeri people of the Kulin Nation. We pay our respects to 
         Elders past, present and emerging, and extend that respect to all 
         Aboriginal and Torres Strait Islander peoples. 
+    </p>
+
+
+</div>
+  
+    
+        
 
         

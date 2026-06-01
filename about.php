@@ -96,11 +96,10 @@ try {
     </div>
 <?php endforeach; ?>
 
-<!-- ================= NEW SECTION ================= -->
 
-<h2>Member Quotes</h2>
+<h2 class="quotes-title">Member Quotes</h2>
 
-<dl>
+<dl class="quotes-section">
     <dt>Kade (Ukrainian)</dt>
     <dd>"Shablya ranytʹ tilo, a slovo — dushu"</dd>
     <dd><em>Translation: The sword wounds the body, but the word wounds the soul.</em></dd>
@@ -118,9 +117,11 @@ try {
     <dd><em>Translation: The rain does not recognize anyone as a friend, it drenches all equally</em></dd>
 </dl>
 
-<h2>Fun Facts</h2>
 
-<table>
+
+<h2 class="facts-title">Fun Facts</h2>
+
+<table class="facts-table">
     <tr>
         <th>Member</th>
         <th>Ethnicity</th>
@@ -157,6 +158,8 @@ try {
         <td>Tennis</td>
     </tr>
 </table>
+
+      
 
 </body>
 </html>

@@ -2,6 +2,19 @@
 
 <?php include 'nav.inc'; ?>
 <body class="index-page">
+
+ <!-- hidden checkbox -->
+    <input type="checkbox" id="searchToggle">
+
+    <!-- button -->
+    <label for="searchToggle" class="search-btn">🔍</label>
+
+    <!-- search box -->
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+    </div>
+
+
 <!-- IMAGE SECTION -->
 <div class="image-section">
     <img src="images/ecommerce_image1.jpg" alt="ecommerce_image1">
@@ -11,7 +24,11 @@
 </div>
 <!-- WHY WORK WITH US -->
 <section>
-   
+    
+
+
+
+
     <table class="WhyWorkWithUs">
         <tr>
             <th colspan="3">Why Work With Us</th>

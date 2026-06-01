@@ -10,9 +10,7 @@ try {
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $pdo->prepare("SELECT * FROM member_contributions");
-    $stmt->execute();
-
+    $stmt = $pdo->query("SELECT * FROM member_contributions ORDER BY member_name ASC");
     $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 } catch (PDOException $e) {
@@ -25,31 +23,53 @@ try {
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
         }
+
         .member-card {
             border: 1px solid #ddd;
             padding: 15px;
             margin-bottom: 15px;
             border-radius: 8px;
         }
+
         .member-name {
             font-size: 20px;
             font-weight: bold;
         }
+
         .role {
             color: #555;
             margin-bottom: 10px;
         }
+
         .section-title {
             font-weight: bold;
             margin-top: 10px;
         }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #f4f4f4;
+        }
     </style>
 </head>
+
 <body>
 
 <h1>About Our Team</h1>
@@ -75,6 +95,68 @@ try {
         </div>
     </div>
 <?php endforeach; ?>
+
+<!-- ================= NEW SECTION ================= -->
+
+<h2>Member Quotes</h2>
+
+<dl>
+    <dt>Kade (Ukrainian)</dt>
+    <dd>"Shablya ranytʹ tilo, a slovo — dushu"</dd>
+    <dd><em>Translation: The sword wounds the body, but the word wounds the soul.</em></dd>
+
+    <dt>Bianca (Italian)</dt>
+    <dd>"La gatta frettolosa ha fatto i gattini ciechi"</dd>
+    <dd><em>Translation: The hurried cat made blind kittens</em></dd>
+
+    <dt>Tom (Vietnamese)</dt>
+    <dd>"Thất bại là mẹ thành công"</dd>
+    <dd><em>Translation: Failure is the mother of success</em></dd>
+
+    <dt>Damisi (Yoruba)</dt>
+    <dd>"Ojo ko da enikeni si ore, gbogbo re lo n mu dogba"</dd>
+    <dd><em>Translation: The rain does not recognize anyone as a friend, it drenches all equally</em></dd>
+</dl>
+
+<h2>Fun Facts</h2>
+
+<table>
+    <tr>
+        <th>Member</th>
+        <th>Ethnicity</th>
+        <th>Favourite Snack</th>
+        <th>Number of Siblings</th>
+        <th>Favourite Sport</th>
+    </tr>
+    <tr>
+        <td>Damisi</td>
+        <td>Nigerian</td>
+        <td>Beef jerky</td>
+        <td>3 siblings</td>
+        <td>Basketball</td>
+    </tr>
+    <tr>
+        <td>Bianca</td>
+        <td>Italian/Greek</td>
+        <td>Cupcakes</td>
+        <td>1 sibling</td>
+        <td>Soccer</td>
+    </tr>
+    <tr>
+        <td>Kade</td>
+        <td>Maltese/Ukrainian/British/Irish</td>
+        <td>Chips</td>
+        <td>2 siblings</td>
+        <td>Footy</td>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>Vietnamese</td>
+        <td>Tim Tams</td>
+        <td>1 sibling</td>
+        <td>Tennis</td>
+    </tr>
+</table>
 
 </body>
 </html>

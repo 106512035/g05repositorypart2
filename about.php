@@ -22,6 +22,7 @@ try {
 
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="styles/shopnest.css">
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
@@ -48,9 +49,20 @@ try {
             font-weight: bold;
             margin-top: 10px;
         }
+        
     </style>
 </head>
 <body>
+    
+<header>
+  <!--header inc link-->
+    <?php include 'header.inc'; ?>
+
+    <!--Nav inc link-->
+  <?php include 'nav.inc'; ?>
+  </header>
+
+  
 
 <h1>About Our Team</h1>
 
@@ -75,6 +87,7 @@ try {
         </div>
     </div>
 <?php endforeach; ?>
+
 
 </body>
 </html>

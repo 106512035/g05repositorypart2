@@ -3,6 +3,6 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "member_contributions";
+$database = "members_contributions";
 
 ?>

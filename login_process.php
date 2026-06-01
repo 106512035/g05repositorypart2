@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // connects to the database 
-$conn = new mysqli($host, $username, $password, $dbname);
+$conn = new mysqli($host, $username, $password, $database);
 
 // checks if the form has been submitted 
 if (isset($_POST['username']) && isset($_POST['password'])) 

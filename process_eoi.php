@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($address)) $errors[] = "Address is required!<br>"; 
     if (!preg_match("/^[0-9]{4}$/", $postcode)) $errors[] = "A valid postcode is required!<br>";   
     if (empty($email)) $errors[] = "Email is required!<br>";
-    if (!preg_match("/^[0-9]{9}$/", $phone_no)) $errors[] = "Phone Number is required!<br>"; 
+    if (!preg_match("/^[0-9]{9}$/", $phone_no)) $errors[] = "Phone Number is required! (in +61 format)<br>"; 
     if (!preg_match("/^[a-zA-Z ]{1,40}$/", $suburb)) $errors[] = "Suburb is required!<br>";   
     if (empty($gender)) $errors[] = "Gender is required!<br>";
     if (empty($state)) $errors[] = "A State is required!<br>";

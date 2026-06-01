@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("jobsetting.php");
+require_once("settings.php");
 
 // Block direct access - only allow POST requests from the form
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

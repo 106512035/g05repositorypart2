@@ -149,12 +149,14 @@
         <!--The fieldset that prompts users to select their gender.-->
         <fieldset class="fieldright">
             <legend>Gender</legend>
-                <p><label for="male">Male</label> 
-                <input type="radio" id="male" name="gender" value="male" required="required">
-                <label for="female">Female</label> 
+                <p><input type="radio" id="male" name="gender" value="male" required="required">
+                <label for="male">Male</label> 
+
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="other">Other</label> 
+                <label for="female">Female</label> 
+                
                 <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label> 
             </p>
         </fieldset>
     

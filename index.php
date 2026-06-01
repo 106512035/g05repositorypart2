@@ -11,7 +11,7 @@
 </div>
 <!-- WHY WORK WITH US -->
 <section>
-   <h2>Why Work With Us</h2>
+   
     <table class="WhyWorkWithUs">
         <tr>
             <th colspan="3">Why Work With Us</th>

@@ -20,37 +20,51 @@ $result = mysqli_query($conn, $query);
     <meta name = "description" content = "Job Description Page">
     <meta name = "keywords" content = "Jobs, Application, HTML, ecommerce ">
     <meta name = "author" content = "Thomas Nguyen">
+    <!--Font from Googles Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shopnest.css">
     <title>Job Description</title>
 
   <!---Embedded CSS-->
   <style>
-  body {
-    font-family: Arial, sans-serif;
-  }
-  h1 {
-    color: #1e3a8a;
-  }
-  .search-container { margin: 20px 0; }
+    * { font-family: 'DM Sans', sans-serif; }
+
+    header h1 {
+      color: white;
+    }
+
+    header{
+      margin: 0px;
+      padding: 0;
+      width: 100%;
+    }
+
+    header img{
+      width: 120px;
+      padding-top: 10px;
+    }
+    .search-container { margin: 20px 0; }
   .search-container input[type="text"] { padding: 8px; font-size: 15px; width: 300px; }
 </style>
-
 </head>
 
 <body>
+  <header>
+  <!--header inc link-->
+    <?php include 'header.inc'; ?>
 
-<!--header inc link-->
-  <?php include 'header.inc'; ?>
+    <!--Nav inc link-->
+  <?php include 'nav.inc'; ?>
+  </header>
 
 
-<!--Nav inc link-->
-<?php include 'nav.inc'; ?>
-
-    <h1>Available positions</h1>
-    <p>We are hiring individuals who have experience in assisting customers online with their orders. All roles are based in Melbourne, Victoria.</p>
+    <h1 style="margin: 15px;">Available positions</h1>
+    <p style="margin: 15px;">We are hiring individuals who have experience in assisting customers online with their orders. All roles are based in Melbourne, Victoria.</p>
   
     <!---Search Bar-->
-<div class="search-container">
+<div class="search-container" style="margin: 15px;">
     <form method="GET" action="jobs.php">
         <input type="text" name="search" placeholder="Search job by keyword" value=" <?php echo $search; ?>">
         <button type="submit">Search</button>
@@ -126,7 +140,7 @@ $result = mysqli_query($conn, $query);
 <?php mysqli_close($conn); ?>
 
 
-  <footer style="text-align: center; font-size: 14px;">
+  <footer style="text-align: center; font-size: 14px;" >
     <p>To apply, send your resume and a short cover letter to <a href="mailto:106509590@swinburne.edu.au">106509590@sswinburne.edu.au</a> quoting the reference number of the role.</p>
     <p>We are an equal opportunity employer and welcome applications from all backgrounds.</p>
     <p>We would also like to acknowledge the Wurundjeri People of the Kulin Nation, the Traditional Owners of the land on which we work. We pay our respects to Elders past, present and emerging.</p>

@@ -25,6 +25,12 @@ header img {
     width: 200px;
 }
 
+body{
+    background:#f4f6f8;
+    margin:0;
+    padding:0px;
+}
+
 /* SEARCH */
 .search-box {
 display: none;              

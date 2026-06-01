@@ -25,34 +25,33 @@ try {
     <meta charset="UTF-8">
     <title>About Us</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
+  <section class="team-section">
 
-        .member-card {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
+<h1>About Our Team</h1>
 
-        .member-name {
-            font-size: 20px;
-            font-weight: bold;
-        }
+<?php foreach ($members as $member): ?>
+    <div class="member-card">
+        <div class="member-name">
+            <?= htmlspecialchars($member['member_name']) ?>
+        </div>
 
-        .role {
-            color: #555;
-            margin-bottom: 10px;
-        }
+        <div class="role">
+            Role: <?= htmlspecialchars($member['role']) ?>
+        </div>
 
-        .section-title {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    </style>
+        <div>
+            <div class="section-title">Project 1 Contribution:</div>
+            <div><?= nl2br(htmlspecialchars($member['project_1_contribution'])) ?></div>
+        </div>
+
+        <div>
+            <div class="section-title">Project 2 Contribution:</div>
+            <div><?= nl2br(htmlspecialchars($member['project_2_contribution'])) ?></div>
+        </div>
+    </div>
+<?php endforeach; ?>
+
+</section>
 </head>
 
 <body>
@@ -91,7 +90,6 @@ try {
     </div>
 <?php endforeach; ?>
 
-<!-- ================= NEW SECTION ================= -->
 
 <h2>Member Quotes</h2>
 

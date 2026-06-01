@@ -53,16 +53,19 @@ try {
             Role: <?= htmlspecialchars($member['role']) ?>
         </div>
 
-        <div>
-            <div class="section-title">Project 1 Contribution:</div>
-            <div><?= nl2br(htmlspecialchars($member['project_1_contribution'])) ?></div>
-        </div>
-
-        <div>
-            <div class="section-title">Project 2 Contribution:</div>
-            <div><?= nl2br(htmlspecialchars($member['project_2_contribution'])) ?></div>
-        </div>
+       <div class="project">
+    <div class="section-title">Project 1 Contribution:</div>
+    <div class="section-content">
+        <?= nl2br(htmlspecialchars($member['project_1_contribution'])) ?>
     </div>
+</div>
+
+<div class="project">
+    <div class="section-title">Project 2 Contribution:</div>
+    <div class="section-content">
+        <?= nl2br(htmlspecialchars($member['project_2_contribution'])) ?>
+    </div>
+</div>
 <?php endforeach; ?>
 
 </section>

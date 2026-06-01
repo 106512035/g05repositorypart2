@@ -9,10 +9,10 @@ try {
     );
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $pdo->prepare("SELECT * FROM project_inputs");
+    $stmt = $pdo->prepare("SELECT * FROM project_input");
     $stmt->execute();
     $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+       
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }

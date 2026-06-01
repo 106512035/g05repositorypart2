@@ -81,16 +81,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //Defining all patterns for each error and its corresponding error message.
     $errors = [];
     if (!preg_match("/^[a-zA-Z0-9]{5}$/", $jobid)) $errors[] = "Please enter a valid 5 digit ID!<br>";
-    if (!preg_match("/[A-Za-z]{1,20}/", $fname)) $errors[] = "First name is required (only alphabetic characters)!<br>";
-    if (!preg_match("/[A-Za-z]{1,20}/", $lname)) $errors[] = "Last name is required (only alphabetic characters)!<br>";
+    if (!preg_match("/^[A-Za-z]{1,20}$/", $fname)) $errors[] = "First name is required (only alphabetic characters)!<br>";
+    if (!preg_match("/^[A-Za-z]{1,20}$/", $lname)) $errors[] = "Last name is required (only alphabetic characters)!<br>";
     if (empty($dob)) $errors[] = "Date of Birth is required!<br>";
     if (empty($address)) $errors[] = "Address is required!<br>"; 
     if (!preg_match("/^[0-9]{4}$/", $postcode)) $errors[] = "A valid postcode is required!<br>";   
     if (empty($email)) $errors[] = "Email is required!<br>";
-    if (!preg_match("/^[0-9]{8,12}$/", $phone_no)) $errors[] = "Phone Number is required!<br>"; 
+    if (!preg_match("/^[0-9]{9}$/", $phone_no)) $errors[] = "Phone Number is required!<br>"; 
     if (!preg_match("/^[a-zA-Z ]{1,40}$/", $suburb)) $errors[] = "Suburb is required!<br>";   
     if (empty($gender)) $errors[] = "Gender is required!<br>";
-    if (empty($state)) $errors[] = "State is required!<br>";
+    if (empty($state)) $errors[] = "A State is required!<br>";
 
     //Checks if errors were found during validation and if found displays these errors.
     if (!empty($errors)) {

@@ -154,7 +154,8 @@
             <p><label for="email" style= "display: block; color: #3d3d3d;">Email</label> 
                 <input type="email" name= "email" id="email" size="35" placeholder="Enter your Email!"></p> 
             <p><label for="phoneno" style= "display: block; color: #3d3d3d;">Phone Number</label>
-                <input type="text" name= "phoneno" id="phoneno" size="25" placeholder="Enter your Phone No!"></p>
+            <p>+61<input type="text" name= "phoneno" id="phoneno" size="25" placeholder="Enter your Phone No!" style="margin-left: 10px;"></p>
+                
         </fieldset>
 
          <!--The fieldset that lists set skills users are able to tick.-->

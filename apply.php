@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,6 +96,24 @@
     <p style = "margin: 0; line-height: 0; margin: 15px;"><strong>Welcome to the ShopNest job application page! Please complete all required fields and let's see if you have what it takes to join our team!</strong></p>
     <p style = "color: #3d3d3d; margin: 15px;">We encourage applications from Aboriginal and Torres Strait Islanders and are committed to providing a positive and safe work enviroment.</p>
 
+    <?php
+    if (isset($_SESSION['errors'])){
+        echo "<div style='background: #fee2e2; border: 1px solid red; border-radius:8px; padding:15px; margin: 10px;'>";
+        echo "<strong style='color:red;'>Please fix the following errors:</strong><br><br>";
+        foreach ($_SESSION['errors'] as $error){
+            echo "$error";
+        }
+        unset($_SESSION['errors']);
+    }
+
+    if (isset($_SESSION['success'])){
+        echo "<div style='background: #d2fce0; border: 1px solid green; border-radius:8px; padding:15px; margin: 10px;'>";
+        echo $_SESSION['success'];
+        echo"</div>";
+        unset($_SESSION['success']);
+    }
+    ?>
+
     <!--Sub-heading and input for job reference ID.-->
     <p><label for="jobid" style="margin: 15px;">Job Reference ID</label> 
         <input type="text" name= "jobid" id="jobid" maxlength="5" size="21" placeholder="Please enter a Valid ID!"> </p>
@@ -174,7 +193,7 @@
         <!--The fieldset that prompts users to select their gender.-->
         <fieldset class="fieldright">
             <legend>Gender</legend>
-                <p><input type="radio" id="male" name="gender" value="male" required="required">
+                <p><input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label> 
 
                 <input type="radio" id="female" name="gender" value="female">

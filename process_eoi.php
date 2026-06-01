@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL);
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
     header("Location: apply.php");
@@ -70,24 +71,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($state)) $errors[] = "State is required!<br>";
 
     if (!empty($errors)) {
-        foreach ($errors as $error) {
-            echo $error;
-        }
+        $_SESSION['errors'] = $errors;
+        $_SESSION['form_data'] = $_POST;
+        header('Location: apply.php');
+        exit();
     }else{
         $sql = "INSERT INTO eoi (job_id, first_name, last_name, dob, gender, address, suburb, state, postcode, email, phone_no, skill_list, other_skills)
         VALUES ('$jobid', '$fname', '$lname', '$dob', '$gender', '$address', '$suburb', '$state', '$postcode', '$email', '$phone_no', '$skill_list', '$otherskills')";
         if (mysqli_query($conn, $sql)){
             $eoi_number = mysqli_insert_id($conn);
-            echo"<h1>Form Submitted Successfully! Your EOInumber is: " . $eoi_number . "</h1>";
+            $_SESSION['success'] = "Form Submitted Successfully! Your EOInumber is: " . $eoi_number;
+            header('Location: apply.php');
+            exit();
         }else{
-            echo"<h1>Error Submitting Form!</h2>";
+            $_SESSION['errors'][]="Error Submitting Form!";
+            header('Location: apply.php');
+            exit();
         }
         mysqli_close($conn);
     }
 }
-
-
-
-
 ?>
 

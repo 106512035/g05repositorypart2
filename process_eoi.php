@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 }
 
 //This checks to see if a connection is possible with the database by using the data in the provided php.
-require_once("settingsapply.php");
+require_once("settings.php");
 $conn = mysqli_connect($host, $username, $password, $database);
 if (!$conn) {
     error_log("Failed to connect to the database:" . mysqli_connect_error());

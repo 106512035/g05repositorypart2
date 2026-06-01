@@ -84,7 +84,7 @@ try {
     <dd>"La gatta frettolosa ha fatto i gattini ciechi"</dd>
     <dd><em>Translation: The hurried cat made blind kittens</em></dd>
 
-    <dt>Tom (Vietnamese)</dt>
+    <dt>Thomas (Vietnamese)</dt>
     <dd>"Thất bại là mẹ thành công"</dd>
     <dd><em>Translation: Failure is the mother of success</em></dd>
 
@@ -125,11 +125,11 @@ try {
         <td>Footy</td>
     </tr>
     <tr>
-        <td>Tom</td>
+        <td>Thomas</td>
         <td>Vietnamese</td>
         <td>Tim Tams</td>
         <td>1 sibling</td>
-        <td>Tennis</td>
+        <td>Skiing</td>
     </tr>
 </table>
 

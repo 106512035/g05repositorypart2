@@ -119,17 +119,17 @@ background-color: #f9fafb;
 }
 
 
-
 .Acknowledgement {
-display: flex;
-justify-content: center;   
-align-items: center;
-gap: 20px;                 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .Acknowledgement img {
-width: 80px;             
-height: auto;
+  width: 80px;
+  height: auto;
+  display: block;
 }
 
 

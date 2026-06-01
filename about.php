@@ -10,9 +10,7 @@ try {
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $pdo->prepare("SELECT * FROM member_contributions");
-    $stmt->execute();
-
+    $stmt = $pdo->query("SELECT * FROM member_contributions ORDER BY member_name ASC");
     $members = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 } catch (PDOException $e) {
@@ -26,32 +24,37 @@ try {
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
         }
+
         .member-card {
             border: 1px solid #ddd;
             padding: 15px;
             margin-bottom: 15px;
             border-radius: 8px;
         }
+
         .member-name {
             font-size: 20px;
             font-weight: bold;
         }
+
         .role {
             color: #555;
             margin-bottom: 10px;
         }
+
         .section-title {
             font-weight: bold;
             margin-top: 10px;
         }
-        
     </style>
 </head>
+
 <body>
     
 <header>
@@ -87,7 +90,6 @@ try {
         </div>
     </div>
 <?php endforeach; ?>
-
 
 </body>
 </html>

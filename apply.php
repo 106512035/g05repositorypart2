@@ -41,7 +41,7 @@
             min-width: 320px;
         }
 
-        * { font-family: 'Inter', sans-serif; }
+        * { font-family: 'DM Sans', sans-serif; }
 
         label {
             font-weight: 500;

@@ -352,3 +352,68 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #cce5ff;
 }
+
+
+ /* ================= QUOTES SECTION ================= */
+
+.quotes-title {
+    margin-top: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+}
+
+.quotes-section {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    margin-top: 10px;
+}
+
+.quotes-section dt {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.quotes-section dd {
+    margin-left: 20px;
+    color: #f3f3f3;
+}
+
+/* ================= FUN FACTS SECTION ================= */
+
+.facts-title {
+    margin-top: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+}
+
+.facts-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.facts-table th,
+.facts-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.facts-table th {
+    background: #1e3a8a;
+    color: white;
+}
+
+.facts-table tr:nth-child(even) {
+    background: #f2f2f2;
+}

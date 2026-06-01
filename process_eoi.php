@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 //Session is started to remember the data
 session_start();
 //Displays all error reportings for the PHP, but is turned off in production.
